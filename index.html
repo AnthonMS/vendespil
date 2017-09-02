@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huskespil</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/game.js"></script>
+</head>
+<body id="indexBody" onload="startTime()">
+    <center>
+        <h1 id="indexTitle"><u>Huskespil</u></h1>
+
+        <p id="overallTimer">00:00:00</p>
+
+        <table id="pointTimerTable">
+            <tr>
+                <th>Start Timer</th>
+                <th>Stop Timer</th>
+                <th>Point</th>
+                <th>Match</th>
+            </tr>
+            <tr>
+                <td id="timerP2">00:00:00</td>
+                <td id="endTimerP2">00:00:00</td>
+                <td id="pointP2">0</td>
+                <td id="matchBoo">false</td>
+            </tr>
+            <tr>
+                <td id="gameStatus" colspan="4">Du har ikke vundet endnu!</td>
+            </tr>
+
+        </table>
+
+
+        <p id="guideText">Tryk på start for at blande kortene og starte!</p>
+
+        <button id="startStop" onclick="myFunction()">Start Spil</button>
+
+        <div id="game">
+
+            <div class="row">
+                <img src="images/1.jpg" class="turnImg" onclick="imageIdClick('turnImgLT')" id="turnImgLT" />
+                <img src="images/2.jpg" class="turnImg" onclick="imageIdClick('turnImgId')" id="turnImgId" />
+                <img src="images/3.jpg" class="turnImg" onclick="imageIdClick('turnImgId2')" id="turnImgId2" />
+                <img src="images/4.jpg" class="turnImg" onclick="imageIdClick('turnImgRT')"  id="turnImgRT" />
+            </div>
+
+            <div class="row">
+                <img src="images/5.jpg" class="turnImg" onclick="imageIdClick('turnImgId3')" id="turnImgId3" />
+                <img src="images/6.jpg" class="turnImg" onclick="imageIdClick('turnImgId4')" id="turnImgId4" />
+                <img src="images/7.jpg" class="turnImg" onclick="imageIdClick('turnImgId5')" id="turnImgId5" />
+                <img src="images/8.jpg" class="turnImg" onclick="imageIdClick('turnImgId6')" id="turnImgId6" />
+            </div>
+
+            <div class="row">
+                <img src="images/7.jpg" class="turnImg" onclick="imageIdClick('turnImgId7')" id="turnImgId7" />
+                <img src="images/2.jpg" class="turnImg" onclick="imageIdClick('turnImgId8')" id="turnImgId8" />
+                <img src="images/5.jpg" class="turnImg" onclick="imageIdClick('turnImgId9')" id="turnImgId9" />
+                <img src="images/4.jpg" class="turnImg" onclick="imageIdClick('turnImgId10')" id="turnImgId10" />
+            </div>
+
+            <div class="row">
+                <img src="images/8.jpg" class="turnImg" onclick="imageIdClick('turnImgLB')" id="turnImgLB" />
+                <img src="images/1.jpg" class="turnImg" onclick="imageIdClick('turnImgId11')" id="turnImgId11" />
+                <img src="images/3.jpg" class="turnImg" onclick="imageIdClick('turnImgId12')" id="turnImgId12" />
+                <img src="images/6.jpg" class="turnImg" onclick="imageIdClick('turnImgRB')"  id="turnImgRB" />
+            </div>
+
+        </div>
+
+    </center>
+
+</body>
+</html>

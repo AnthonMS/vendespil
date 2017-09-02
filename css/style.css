@@ -1,0 +1,55 @@
+.turnImg {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 0px solid green;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px grey;
+
+    transition: width 0.1s;
+}
+
+.turnImg:hover {
+     box-shadow: 0px 0px 15px green;
+}
+
+#turnImgLB {
+    border-radius: 5px 5px 5px 25px;
+}
+
+#turnImgLT {
+    border-radius: 25px 5px 5px 5px;
+}
+
+#turnImgRB {
+    border-radius: 5px 5px 25px 5px;
+}
+
+#turnImgRT {
+    border-radius: 5px 25px 5px 5px;
+}
+
+#indexBody {
+    background: -webkit-radial-gradient(circle, orange, powderblue, green); /* Safari */
+    background: -o-radial-gradient(circle, orange, powderblue, green); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, orange, powderblue, green); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, orange, powderblue, green); /* Standard syntax */
+}
+
+#indexTitle {
+    text-shadow: 2px 2px 5px red;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td {
+    text-align: center;
+}
+
+#gameStatus {
+    color: red;
+}
+
+
